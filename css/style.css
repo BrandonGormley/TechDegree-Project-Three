@@ -1,5 +1,10 @@
+body {
+    font-family: 'Kulim Park', sans-serif;
+}
+
+
 .title {
-    background: #262636;
+    background: #7ca539;
     height: 65px;
     display: flex;
 }
@@ -16,6 +21,8 @@ h1 {
     background-color: #fff;
     display: block;
     padding-bottom: 30px;
+    border-bottom: 2px solid #262636;
+    margin: 0 10px;
 
 }
 
@@ -41,7 +48,6 @@ h2 {
 /* ================= Form styles ============== */
 .main-form {
     display: block;
-    border-bottom: 2px solid #262636;
     padding-bottom: 30px;
     margin: 0 10px;
 }
@@ -51,7 +57,22 @@ h2 {
     font-size: 1.4rem;
 }
 
+.newsletter-title {
+    color: #262636;
+    font-size: 1.4rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+.contact-information {
+    border-bottom: 2px solid #262636;
+    padding-bottom: 30px;
+}
+
 input[type=text],
+input[type=email],
 .input_style {
     background-color: #eff0f1;
     border-radius: 4px;
@@ -61,10 +82,17 @@ input[type=text],
     color: rgb(49, 49, 49);
 }
 
+input::placeholder {
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
 input[type=text]:focus,
+input[type=email]:focus,
 .input_style:focus {
     outline: none;
-    border: 2px solid #46698b;
+    border: 2px solid #468b49;
 }
 
 label {
