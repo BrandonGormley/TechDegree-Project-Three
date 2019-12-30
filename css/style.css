@@ -1,0 +1,79 @@
+.title {
+    background: #262636;
+    height: 65px;
+    display: flex;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.intro-title {
+    background-color: #fff;
+    display: block;
+    padding-bottom: 30px;
+
+}
+
+h2 {
+    color: #262636;
+    margin: auto;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.intro-title p {
+    color: rgb(155, 176, 182);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+/* ================= Form styles ============== */
+.main-form {
+    display: block;
+    border-bottom: 2px solid #262636;
+    padding-bottom: 30px;
+    margin: 0 10px;
+}
+
+.contact-title {
+    color: #262636;
+    font-size: 1.4rem;
+}
+
+input[type=text],
+.input_style {
+    background-color: #eff0f1;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    color: rgb(49, 49, 49);
+}
+
+input[type=text]:focus,
+.input_style:focus {
+    outline: none;
+    border: 2px solid #46698b;
+}
+
+label {
+    color: #495d70;
+    display: block;
+    margin: 15px 0;
+}
+
+#zipcode {
+    width: 50%;
+}
+
