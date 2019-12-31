@@ -86,6 +86,7 @@ fieldset {
 
 input[type=text],
 input[type=email],
+input[type=tel],
 .input_style {
     background-color: #eff0f1;
     border-radius: 4px;
@@ -103,6 +104,7 @@ input::placeholder {
 
 input[type=text]:focus,
 input[type=email]:focus,
+input[type=tel]:focus,
 .input_style:focus {
     outline: none;
     border: 2px solid #468b49;
@@ -197,5 +199,10 @@ footer p {
 
     #zipcode {
         margin-left: -35px;
+    }
+
+    form {
+        max-width: 650px;
+        margin: auto;
     }
 }
