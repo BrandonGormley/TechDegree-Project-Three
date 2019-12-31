@@ -29,8 +29,8 @@
         <form action="index.html" method="post">
 
             <fieldset class="contact-information">
-                <legend>
-                    <h3 class="contact-title">Contact Information</h3>
+                <legend class="contact-title">
+                    Contact Information
                 </legend>
 
                 <label for="name">Full Name</label>
@@ -46,24 +46,62 @@
                 <input type="text" id="address" name="user_address" placeholder="ave, str, way ,etc">
 
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+                <input type="text" id="city" name="user_city" placeholder="los angeles">
 
                 <label for="state">State</label>
                 <select class="input_style" name="user_state" id="state">
+                    <option value="" disabled selected>Choose State</option>
                 </select>
 
                 <label for="zipcode">Zip Code</label>
-                <input type="text" id="zipcode" name="user_zipcode">
+                <input type="text" id="zipcode" name="user_zipcode" placeholder="12345">
             </fieldset>
 
             <fieldset>
-                <legend>
-                    <h3 class="newsletter-title">Newsletter</h3>
+                <legend class="newsletter-title">Newsletter
                 </legend>
+
+                <p class="newsletter-p">Select the newsletters you would like to recieve</p>
+
+                <div class="newsletter-sec">
+                    <label class="newsletters" for="html">HTML News</label>
+                    <input class="news_check" type="checkbox" id="html" name="newsletter_html">
+                </div>
+
+                <div class="newsletter-sec">
+                    <label class="newsletters" for="css">CSS News</label>
+                    <input class="news_check" type="checkbox" id="css" name="newsletter_css">
+                </div>
+
+                <div class="newsletter-sec">
+                    <label class="newsletters" for="javascript">Javascript News</label>
+                    <input class="news_check" type="checkbox" id="javascript" name="newsletter_javascript">
+                </div>
+
+                <p class="newsletter-p">Newsletter format</p>
+
+                <div class="newsletter-sec">
+                    <label class="newsletters" for="html_radio">HTML</label>
+                    <input class="news_check" type="radio" id="html_radio" name="format">
+                </div>
+
+                <div class="newsletter-sec">
+                    <label class="newsletters" for="plaintext_radio">Plain text</label>
+                    <input class="news_check" type="radio" id="plaintext_radio" name="format">
+                </div>
+
+                <p class="newsletter-p othertopics">Other topics you'd like to hear about</p>
+
+                <textarea name="othertopics" id="text_othertopics"></textarea>
             </fieldset>
 
+            <button type="submit" id="submit" name="submit_button">Sign Up</button>
         </form>
     </main>
+
+    <footer>
+        <p class="">Copyright The Code Review</p>
+    </footer>
 
 </body>
 
